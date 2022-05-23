@@ -10,7 +10,7 @@
 body{
     background-color: black;
 }
-.container{
+#app{
     gap: 50px;
     padding: 50px 30px;
     margin: 0 auto;
