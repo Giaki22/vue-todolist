@@ -3,11 +3,11 @@ let app = new Vue({
     data: {
         toDoList: [
             {
-                text: 'prova',
+                text: 'Prova',
                 done: false,
             },
             {
-                text: 'prova 2',
+                text: 'Prova 2',
                 done: true,
             }
         ],
@@ -16,6 +16,12 @@ let app = new Vue({
     methods: {
         removeToDo(index){
             this.toDoList.splice(index, 1);
+        },
+        pushToDo(userText){
+            if (!(this.toDoText.value == "")) {
+                this.toDoList.push({text: this.toDoText.trim(), done: false});
+                this.toDoText = "";
+            }
         }
     }
 })
