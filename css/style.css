@@ -3,3 +3,83 @@
     padding: 0;
     box-sizing: border-box;
 }
+.taskDone{
+    text-decoration: line-through;
+}
+/* STYLE */
+body{
+    background-color: black;
+}
+.container{
+    gap: 50px;
+    padding: 50px 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.main-actions{
+    display: flex;
+    gap: 20px;
+    flex-flow: row wrap;
+    align-items: center;
+}
+#toDoAction{
+    outline: 2px solid white;
+    color: white;
+    font-size: 30px;
+    background-color: #777777;
+    min-height: 60px;
+    width: 400px;
+    border: none;
+}
+.submit{
+    height: 30px;
+    color: white;
+    background-color: #c72219;
+    padding: 5px 15px;
+}
+.list-container{
+    border-radius: 20px;
+    outline: 2px solid #c72219;
+    min-width: 1200px;
+    background-color: #3b3b3b77;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px;
+    gap: 10px;
+}
+.action{
+    color: white;
+    border-radius: 5px;
+    outline: 2px solid #c722196d;
+    padding: 10px;
+    min-height: 50px;
+    background-color: #777777;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.actions{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+}
+.done, .remove{
+    padding: 2px 0;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+.remove{
+    color: #babab9;
+    border: 1px solid #babab9;
+    background-color: #c72219;
+}
+.done{
+    color: #c72219;
+    border: 1px solid #c72219;
+    background-color: #babab9
+}
