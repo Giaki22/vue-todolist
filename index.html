@@ -20,7 +20,7 @@
                 <div class="text" :class="{taskDone: toDoList[i].done === true}">{{toDoList[i].text}}</div>
                 <div class="actions">
                     <button class="done">V</button>
-                    <button class="remove">X</button>
+                    <button class="remove" @click="removeToDo(i)">X</button>
                 </div>
             </div>
         </div>

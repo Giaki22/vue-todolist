@@ -43,7 +43,7 @@ body{
 .list-container{
     border-radius: 20px;
     outline: 2px solid #c72219;
-    min-width: 1200px;
+    min-width: 80%;
     background-color: #3b3b3b77;
     display: flex;
     flex-flow: column wrap;
