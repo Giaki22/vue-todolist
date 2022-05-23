@@ -12,6 +12,7 @@ let app = new Vue({
             }
         ],
         index : 0,
+        toDoText: ""
     },
     methods: {
         removeToDo(index){
@@ -22,6 +23,9 @@ let app = new Vue({
                 this.toDoList.push({text: this.toDoText.trim(), done: false});
                 this.toDoText = "";
             }
+        },
+        doneOrViceversa(todo){
+            todo.done = !todo.done;
         }
     }
 })
